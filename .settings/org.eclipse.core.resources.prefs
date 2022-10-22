@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//java/DAO/CampaignDAO.java=UTF-8
+encoding//java/bean/CampaignService.java=UTF-8
+encoding//java/bean/DonationService.java=UTF-8
+encoding//java/bean/SendEmail.java=UTF-8
+encoding//java/bean/UserService.java=UTF-8
+encoding//java/controller/admin/CreateAndEditCampaignController.java=UTF-8
+encoding//java/controller/admin/CreateAndEditUserController.java=UTF-8
+encoding//java/controller/admin/DeleteCampaignsController.java=UTF-8
+encoding//java/controller/admin/DonationHistoryController.java=UTF-8
+encoding//java/controller/admin/ListCampaignsController.java=UTF-8
+encoding//java/controller/admin/ListUserController.java=UTF-8
+encoding//java/controller/user/DonationController.java=UTF-8
+encoding//java/controller/web/LandingPageController.java=UTF-8
+encoding//java/controller/web/RegisterController.java=UTF-8
+encoding//src/main/webapp/js/user/personal_information.js=UTF-8
+encoding//src/main/webapp/views/user/choose_payment.jsp=UTF-8

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Huyenpptfx13136_FinalProject</display-name>
+	<welcome-file-list>
+		<welcome-file>LandingPageController</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ListCampaignsController</servlet-name>
+		<servlet-class>controller.admin.ListCampaignsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCampaignsController</servlet-name>
+		<url-pattern>/quan-li-chien-dich</url-pattern>
+		<url-pattern>/danh-sach-chien-dich</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateAndEditCampaignController</servlet-name>
+		<servlet-class>controller.admin.CreateAndEditCampaignController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateAndEditCampaignController</servlet-name>
+		<url-pattern>/chinh-sua-chien-dich</url-pattern>
+		<url-pattern>/tao-chien-dich-moi</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteCampaignsController</servlet-name>
+		<servlet-class>controller.admin.DeleteCampaignsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCampaignsController</servlet-name>
+		<url-pattern>/xoa-chien-dich</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListUserController</servlet-name>
+		<servlet-class>controller.admin.ListUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUserController</servlet-name>
+		<url-pattern>/quan-li-nguoi-dung</url-pattern>
+		<url-pattern>/danh-sach-nguoi-dung</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteUserController</servlet-name>
+		<servlet-class>controller.admin.DeleteUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserController</servlet-name>
+		<url-pattern>/xoa-nguoi-dung</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CreateAndEditUserController</servlet-name>
+		<servlet-class>controller.admin.CreateAndEditUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateAndEditUserController</servlet-name>
+		<url-pattern>/tao-nguoi-dung-moi</url-pattern>
+		<url-pattern>/chinh-sua-thong-tin-nguoi-dung</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LandingPageController</servlet-name>
+		<servlet-class>controller.web.LandingPageController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LandingPageController</servlet-name>
+		<url-pattern>/quy-tu-thien-ban-mai</url-pattern>
+		<url-pattern>/trang-nguoi-dung</url-pattern>
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.web.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/dang-nhap</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>controller.web.RegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/dang-ky</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgotPasswordController</servlet-name>
+		<servlet-class>controller.web.ForgotPasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordController</servlet-name>
+		<url-pattern>/quen-mat-khau</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dashboard.jsp</servlet-name>
+		<jsp-file>/views/admin/dashboard.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dashboard.jsp</servlet-name>
+		<url-pattern>/trang-quan-tri</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controller.web.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/dang-xuat</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<servlet-class>controller.user.ChangePasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<url-pattern>/thay-doi-mat-khau</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DonationController</servlet-name>
+		<servlet-class>controller.user.DonationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DonationController</servlet-name>
+		<url-pattern>/lich-su-quyen-gop</url-pattern>
+		<url-pattern>/thuc-hien-quyen-gop</url-pattern>
+		<url-pattern>/luu-quyen-gop</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePersonalInformationController</servlet-name>
+		<servlet-class>controller.user.UpdatePersonalInformationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePersonalInformationController</servlet-name>
+		<url-pattern>/thong-tin-ca-nhan</url-pattern>
+		<url-pattern>/cap-nhat-thong-tin-ca-nhan</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CampaignStoryController</servlet-name>
+		<servlet-class>controller.web.CampaignStoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CampaignStoryController</servlet-name>
+		<url-pattern>/cau-chuyen</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DonationHistoryController</servlet-name>
+		<servlet-class>controller.admin.DonationHistoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DonationHistoryController</servlet-name>
+		<url-pattern>/quan-li-lich-su-quyen-gop</url-pattern>
+
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+</web-app>
