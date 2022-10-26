@@ -80,6 +80,7 @@ public class CreateAndEditUserController extends HttpServlet {
 
 		PrintWriter out = response.getWriter();
 		UserService us = new UserService();
+		BCrypt bCrypt = new BCrypt();
 		RandomPassword rp = new RandomPassword();
 		User u = null;
 		if (action != null && action.equals("create")) {
@@ -88,7 +89,7 @@ public class CreateAndEditUserController extends HttpServlet {
 					u = us.prepareUserToAdd(request);
 
 					String pass = rp.randomPassword();
-					u.setU_password(pass);
+					u.setU_password(bCrypt.hashpw(pass, bCrypt.gensalt()));
 					u.setU_role(false);
 					u.setU_status("inactive");
 
