@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import bean.RandomPassword;
 import bean.UserService;
+import helper.BCrypt;
 import model.User;
 
 /**
